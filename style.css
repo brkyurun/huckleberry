@@ -1,6 +1,18 @@
+:root {
+  --clr-primary: hsl(160deg 100% 30%);
+  --clr-secondary-gold-light: hsl(45deg 100% 50%);
+  --clr-secondary-gold-dark: hsl(45deg 100% 40%);
+  --clr-gray-black: hsl(0deg 0% 0%);
+  --clr-gray-very-dark: hsl(0deg 0% 10%);
+  --clr-gray-dark: hsl(0deg 0% 30%);
+  --clr-gray-medium: hsl(0deg 0% 40%);
+  --clr-gray-light: hsl(0deg 0% 60%);
+  --clr-white: hsl(0deg 0% 100%);
+}
+
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -10,3 +22,59 @@ body {
 }
 
 /* Add styles here! */
+header,
+.card {
+  padding-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 8px solid var(--clr-gray-light);
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+strong {
+  font-weight: bold;
+  color: var(--clr-primary);
+}
+
+.title {
+  margin-bottom: 3rem;
+}
+
+.intro-chunk {
+  padding-bottom: 4rem;
+  max-width: 400px;
+}
+
+main {
+  background-color: var(--clr-gray-medium);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.card {
+  background-color: var(--clr-white);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0 -1.5rem;
+}
+
+.indented-heading {
+  background-color: var(--clr-secondary-gold-light);
+  max-width: fit-content;
+  padding: 0.75rem 2rem;
+  margin-left: -2rem;
+  border-bottom: 8px solid var(--clr-secondary-gold-dark);
+  margin-bottom: 1.5rem;
+}
